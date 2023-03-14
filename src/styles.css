@@ -1,3 +1,26 @@
-h1 {
-  color: green;
+* { 
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer {
+  border: 2px solid black;
+  height: 80px;
+}
+
+.footer1 {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.footer2 {
+  height: 20%;
+  width: 100%;
+  background-color: #bbb;
+  border-top: 2px solid black;
 }
