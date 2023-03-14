@@ -1,5 +1,5 @@
 import names from './names.js';
-import { cars } from './carImg.js';
+import cars from './carImg.js';
 import nolike from '../like/nolike.png';
 
 export default async () => {

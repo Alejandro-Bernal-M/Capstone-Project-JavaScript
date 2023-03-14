@@ -26,4 +26,4 @@ const cars = [
   },
 ];
 
-export { cars };
+export default cars;
