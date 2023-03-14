@@ -72,3 +72,10 @@
   align-items: center;
   padding-left: 30px;
 }
+
+.footer2 {
+  height: 20%;
+  width: 100%;
+  background-color: #bbb;
+  border-top: 2px solid black;
+}
