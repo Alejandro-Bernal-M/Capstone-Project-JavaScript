@@ -36,4 +36,4 @@ export default async () => {
     counter += 1;
   }
   names();
-}
+};

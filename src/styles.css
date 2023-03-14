@@ -1,4 +1,4 @@
-* { 
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -25,7 +25,7 @@
   gap: 15px;
 }
 
-.imgDiv{
+.imgDiv {
   height: 40%;
   width: 100%;
 }
@@ -37,7 +37,7 @@
   justify-content: space-around;
 }
 
-.likes{
+.likes {
   height: 30px;
   width: 30px;
   position: relative;
@@ -45,9 +45,9 @@
 }
 
 .btn {
- background: #fff;
- box-shadow: 3px 3px 2px black;
- font-size: 20px;
+  background: #fff;
+  box-shadow: 3px 3px 2px black;
+  font-size: 20px;
 }
 
 .btncom {
