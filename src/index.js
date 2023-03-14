@@ -1,4 +1,4 @@
 import './styles.css';
-import sum from './modules/sum.js';
+import cardsConstructor from './modules/cardsConstructor.js';
 
-sum(1, 1);
+cardsConstructor();
