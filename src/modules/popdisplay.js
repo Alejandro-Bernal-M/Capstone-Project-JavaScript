@@ -6,7 +6,7 @@ export default () => {
   btns.forEach((btn) => {
     btn.addEventListener('click', () => {
       popups.style.display = 'block';
-      popup(btn);
+      popup(btn, btn.parentNode.id);
     });
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
