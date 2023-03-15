@@ -125,3 +125,12 @@
 .cars-features > p {
   margin-top: 11px;
 }
+
+.counters {
+  width: 15%;
+  margin: 0 auto;
+}
+
+.counter-li {
+  margin: 7px;
+}
