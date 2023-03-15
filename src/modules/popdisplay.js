@@ -7,7 +7,7 @@ export default () => {
     btn.addEventListener('click', () => {
       popups.style.display = 'block';
       popup(btn,btn.parentNode.id);
-    });
+      });
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
       popups.style.display = 'none';

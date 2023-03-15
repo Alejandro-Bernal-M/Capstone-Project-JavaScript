@@ -4,17 +4,17 @@ export default async (id,name,comments) => {
     item_id: id,
     username: name,
     comment: comments,
-
   };
   const config = {
     method: 'POST',
     headers: {
-    'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(item),
-      };
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(item),
+ };
 
-      const res = await fetch(url, config);
-      return res;
+  const res = await fetch(url, config);
+  console.log(res)
+  return res;
 };
 
