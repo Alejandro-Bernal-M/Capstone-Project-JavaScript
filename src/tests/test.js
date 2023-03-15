@@ -1,5 +1,9 @@
-import sum from '../modules/sum.js';
+import counterForAllCards from '../modules/counterForAllCards.js';
 
-test('test 1', () => {
-  expect(sum(1, 2)).toBe(3);
-});
+describe('Test for counter all the items', () => {
+  test('should be 1', () =>{
+    document.body.innerHTML = `
+    <div class="card"></div>
+    `;
+  })
+})
