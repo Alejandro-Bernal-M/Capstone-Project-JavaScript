@@ -1,10 +1,15 @@
 import arrayWithCars from './arrayWithCars.js';
 import cars from './carImg.js';
+import comments from './comments.js';
+import getcomments from './getcomments.js';
 
 export default async (
   btn,
+  id
 ) => {
   const array = await arrayWithCars();
+  const commentContent = await getcomments(id);
+  console.log(commentContent)
   const popupContainer = document.querySelector('.popup');
   popupContainer.innerHTML = '';
   popupContainer.innerHTML += `
@@ -17,15 +22,16 @@ export default async (
       <p>model:  ${array[btn.parentNode.id].name} </p>
       <p>price:  ${array[btn.parentNode.id].price}</p>
       </div>
-      <form class="form" action="/" method="GET">
-      <div class= "comment-container">
-      <h2 class = "Add a comment">
-      <div>
-      <input id ="name" placeholder="your name" type="text">
-      <input id ="insights" placeholder="your insights" type="text">
+      <div class="comment-and-form">
+      <form class="form">
+      <div class="formContent">
+        <h2 class = "add-comment">Add a comment</h2>
+        <input id ="name" placeholder="your name" type="text">
+        <input id ="insights" placeholder="your insights" type="text">
+        <button id = "button" class="btn" type="submit">comment</button>
       </div>
-      <button id = "button" class="btn" type="Submit">comment</button>
-    </form>
+      </form>
+      <div class ="commentsHolder"></div>
 
       `;
   const popups = document.querySelector('.popup-display');
@@ -38,13 +44,21 @@ export default async (
 
   const form = document.querySelector('.form');
   form.addEventListener('submit',(e)=> {
-    e.defaultPrevented(); // prevent the default from submission.
-
+    e.preventDefault(); // prevent the default from submission.
     const name = document.getElementById('name').value;
     const insights = document.getElementById('insights').value;
+    console.log( id, name, insights)
 
-    comments(id,name,insights)
+    comments(id, name, insights)
 
-    
   })
+  const commentsDiv = document.querySelector('.commentsHolder')
+  commentContent.forEach((obj) => {
+    commentsDiv.innerHTML += `
+    <div class="commentaries">
+    <p class="commentName">Name= ${obj.username}</p>
+    <p class="commentCom">Comment= ${obj.comment}</p>
+    `
+  })
+ // commentsDiv.textContent = commentContent[0].comment;
 };

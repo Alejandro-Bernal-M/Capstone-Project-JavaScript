@@ -13,7 +13,7 @@ counterForAllLikes();
 cardsConstructor();
 counterCarsHolder.textContent = counterForAllCards();
 giveLikes();
-getcomments();
+getcomments(1);
 
 setInterval(async () => {
   counterLikesHolder.textContent = await counterForAllLikes();
