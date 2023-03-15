@@ -3,6 +3,7 @@ import cars from './carImg.js';
 
 export default async (
   btn,
+  id,
 ) => {
   const array = await arrayWithCars();
   const popupContainer = document.querySelector('.popup');
@@ -17,6 +18,15 @@ export default async (
       <p>model:  ${array[btn.parentNode.id].name} </p>
       <p>price:  ${array[btn.parentNode.id].price}</p>
       </div>
+      <form class="form" action="/" method="GET">
+      <div class= "comment-container">
+      <h2 class = "Add a comment">
+      <div>
+      <input id ="name" placeholder="your name" type="text">
+      <input id ="insights" placeholder="your insights" type="text">
+      </div>
+      <button id = "button" class="btn" type="Submit">comment</button>
+    </form>
 
       `;
   const popups = document.querySelector('.popup-display');
@@ -24,5 +34,18 @@ export default async (
   close.addEventListener('click', () => {
     popups.style.display = 'none';
     popupContainer.innerHTML = '';
+
   });
+
+  const form = document.querySelector('.form');
+  form.addEventListener('submit',(e)=> {
+    e.defaultPrevented(); // prevent the default from submission.
+
+    const name = document.getElementById('name').value;
+    const insights = document.getElementById('insights').value;
+
+    comments(id,name,insights)
+
+    
+  })
 };
