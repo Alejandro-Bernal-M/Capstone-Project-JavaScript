@@ -9,4 +9,4 @@ export default async () => {
     }
   });
   return counter;
-}
+};
