@@ -1,6 +1,7 @@
 import names from './names.js';
 import cars from './carImg.js';
 import nolike from '../like/nolike.png';
+import popdisplay from './popdisplay.js';
 
 export default async () => {
   const holder = document.querySelector('.card-holder');
@@ -36,8 +37,10 @@ export default async () => {
     btnRes.classList.add('btn', 'btnres');
     btnRes.textContent = 'Reservation';
     newCard.appendChild(btnRes);
+    newCard.id = counter;
     holder.appendChild(newCard);
     counter += 1;
   }
   names();
+  popdisplay();
 };
