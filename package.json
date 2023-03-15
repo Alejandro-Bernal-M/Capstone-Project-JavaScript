@@ -15,6 +15,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "jest":{
+    "testEnvironment": "jsdom"
+  },
   "bugs": {
     "url": "https://github.com/Alejandro-Bernal-M/Capstone-Project-Setup-Kanban/issues"
   },
@@ -39,5 +42,8 @@
     "webpack": "^5.76.1",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^29.5.0"
   }
 }
