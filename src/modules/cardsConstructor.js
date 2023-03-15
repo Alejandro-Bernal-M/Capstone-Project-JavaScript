@@ -25,6 +25,10 @@ export default async () => {
     likes.classList.add('likes');
     imgAndTitle.appendChild(likes);
     newCard.appendChild(imgAndTitle);
+    const likeCounter = document.createElement('p');
+    likeCounter.classList.add('likeCounter');
+    likeCounter.textContent = '';
+    newCard.appendChild(likeCounter);
     const btnCom = document.createElement('button');
     btnCom.classList.add('btn', 'btncom');
     btnCom.textContent = 'Comments';

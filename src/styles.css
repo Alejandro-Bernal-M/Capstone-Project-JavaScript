@@ -9,7 +9,7 @@
   height: 800px;
   width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(33%, 200px));
+  grid-template-columns: repeat(auto-fit, 33%);
   grid-template-rows: 1fr 1fr;
   align-items: center;
   margin: 0 auto;
@@ -42,6 +42,7 @@
   width: 30px;
   position: relative;
   left: 10px;
+  border-radius: 100%;
 }
 
 .btn {
