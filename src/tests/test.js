@@ -6,7 +6,7 @@ describe('Test for counter all the items', () => {
     <div class="card"></div>
     `;
     expect(counterForAllCards()).toEqual(1);
-  })
+  });
 
   test('should be 6', () => {
     document.body.innerHTML = `
@@ -18,5 +18,5 @@ describe('Test for counter all the items', () => {
     <div class="card"></div>
     `;
     expect(counterForAllCards()).toEqual(6);
-  })
-})
+  });
+});
