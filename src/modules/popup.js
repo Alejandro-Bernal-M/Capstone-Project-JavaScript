@@ -16,7 +16,7 @@ const Popup = async (
       </div>
 
       <h2 class = "cars-popup-title">${Model}</h2>
-      <div class="movie-features">
+      <div class="movie-features">+
       <p>price: ${price}</p>
       <p>color: ${color}</p>
       </div>
