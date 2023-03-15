@@ -7,10 +7,10 @@ export default () => {
     btn.addEventListener('click', () => {
       popups.style.display = 'block';
       popup(btn);
-      });
+    });
     const close = document.querySelector('.close');
     close.addEventListener('click', () => {
       popups.style.display = 'none';
-    })
-  })
-}
+    });
+  });
+};

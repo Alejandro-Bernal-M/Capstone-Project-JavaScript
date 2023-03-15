@@ -1,13 +1,13 @@
 import arrayWithCars from './arrayWithCars.js';
-import cars from './carImg.js'
- 
-export default  async (
-    btn
+import cars from './carImg.js';
+
+export default async (
+  btn,
 ) => {
-    const array = await arrayWithCars();
-    const popupContainer = document.querySelector('.popup');
-    popupContainer.innerHTML = '';
-    popupContainer.innerHTML += `
+  const array = await arrayWithCars();
+  const popupContainer = document.querySelector('.popup');
+  popupContainer.innerHTML = '';
+  popupContainer.innerHTML += `
     <div class="close">X</div>
     <div class = "best-cars">
         <img src="${cars[btn.parentNode.id].src}" alt="" class="cars-img" />
@@ -24,6 +24,5 @@ export default  async (
   close.addEventListener('click', () => {
     popups.style.display = 'none';
     popupContainer.innerHTML = '';
-  })
+  });
 };
-
