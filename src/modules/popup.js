@@ -5,11 +5,10 @@ import getcomments from './getcomments.js';
 
 export default async (
   btn,
-  id
+  id,
 ) => {
   const array = await arrayWithCars();
   const commentContent = await getcomments(id);
-  console.log(commentContent)
   const popupContainer = document.querySelector('.popup');
   popupContainer.innerHTML = '';
   popupContainer.innerHTML += `
@@ -28,7 +27,7 @@ export default async (
         <h2 class = "add-comment">Add a comment</h2>
         <input id ="name" placeholder="your name" type="text">
         <input id ="insights" placeholder="your insights" type="text">
-        <button id = "button" class="btn" type="submit">comment</button>
+        <button id = "button" class="btn" type="submit">Submit</button>
       </div>
       </form>
       <div class ="commentsHolder"></div>
@@ -39,26 +38,23 @@ export default async (
   close.addEventListener('click', () => {
     popups.style.display = 'none';
     popupContainer.innerHTML = '';
-
   });
 
   const form = document.querySelector('.form');
-  form.addEventListener('submit',(e)=> {
+  form.addEventListener('submit', (e) => {
     e.preventDefault(); // prevent the default from submission.
     const name = document.getElementById('name').value;
     const insights = document.getElementById('insights').value;
-    console.log( id, name, insights)
-
-    comments(id, name, insights)
-
-  })
-  const commentsDiv = document.querySelector('.commentsHolder')
+    comments(id, name, insights);
+  });
+  const commentsDiv = document.querySelector('.commentsHolder');
   commentContent.forEach((obj) => {
     commentsDiv.innerHTML += `
     <div class="commentaries">
     <p class="commentName">Name= ${obj.username}</p>
     <p class="commentCom">Comment= ${obj.comment}</p>
-    `
-  })
- // commentsDiv.textContent = commentContent[0].comment;
+    <p class="creationDate">Date and Time=${obj.creation_date}</p>
+    `;
+  });
+  // commentsDiv.textContent = commentContent[0].comment;
 };
