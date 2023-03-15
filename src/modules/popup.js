@@ -3,7 +3,6 @@ import cars from './carImg.js';
 
 export default async (
   btn,
-  id,
 ) => {
   const array = await arrayWithCars();
   const popupContainer = document.querySelector('.popup');
