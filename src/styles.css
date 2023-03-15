@@ -125,3 +125,24 @@
 .cars-features > p {
   margin-top: 11px;
 }
+
+#name {
+display : flex;
+top: 10px;
+margin-top: 10px;
+width: 140px;
+height: 30px;
+}
+
+
+#insights {
+  width: 140px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+#button {
+  width: 140px;
+  height: 30px;
+  margin-top: 15px;
+}
