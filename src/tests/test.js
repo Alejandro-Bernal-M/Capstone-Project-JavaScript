@@ -19,4 +19,11 @@ describe('Test for counter all the items', () => {
     `;
     expect(counterForAllCards()).toEqual(6);
   });
+
+  
+
+
+
+
+
 });
