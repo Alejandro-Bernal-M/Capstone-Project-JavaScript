@@ -5,10 +5,6 @@
 
 # BEST CARS SELL <a name="about-project"></a>
 
-![all-devices-black (1)](https://user-images.githubusercontent.com/103900838/218183377-5203cb47-87c2-4e32-afa0-a74db2f17451.png)
-
-
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -72,13 +68,13 @@ This project is the final capstone project in module 2 in the Microverse program
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-To see the demo version : https://github.com/Alejandro-Bernal-M/Capstone-Project-Setup-Kanban
+To see the demo version : [GitHub Pages](https://alejandro-bernal-m.github.io/Capstone-Project-JavaScript/)
 
 ##  Video Documentation <a name="live-demo"></a>
 
 Here we explain you our project!
 
-https://drive.google.com/file/d/1M_C1MTr86qxF2wS3QZc8wYBOwot-4FcU/view?usp=sharing
+[video](https://drive.google.com/file/d/1BDIg9YtLurNbPRHx_GAD84zlrnhxW5n8/view?usp=sharing)
 
 <!-- GETTING STARTED -->
 
@@ -107,7 +103,8 @@ git clone https://github.com/Alejandro-Bernal-M/Capstone-Project-Setup-Kanban.gi
 ```bash
 cd Capstone-Project-Setup-Kanban
 ```
-3. Open it with the live server
+3. Open it with the live server: 
+npm start
 
 ### Install
 ```
@@ -132,13 +129,12 @@ npx stylelint "**/*.{css,scss}"
 
 ```
 npx eslint .
+
+run jest tests with "npm test"
 ```
 
 ### Deployment <a name="deployment"></a>
 
-To deploy this project run
-
-```
 npm run deploy
 ```
 
@@ -162,7 +158,7 @@ npm run deploy
 👤 **Alejandro Bernal Marin**
 
 - GitHub: [@](https://github.com/Alejandro-Bernal-M)
-- Twitter: [@](https://twitter.com/twitterhandle)
+- Twitter: [@](https://twitter.com/ABMblau)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-bernal-marin-901a53245/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
