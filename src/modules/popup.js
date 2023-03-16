@@ -8,7 +8,7 @@ export default async (
   id,
 ) => {
   const array = await arrayWithCars();
-  const commentContent = await getcomments(id);
+  let commentContent = await getcomments(id);
   const popupContainer = document.querySelector('.popup');
   popupContainer.innerHTML = '';
   popupContainer.innerHTML += `
@@ -46,15 +46,33 @@ export default async (
     const name = document.getElementById('name').value;
     const insights = document.getElementById('insights').value;
     comments(id, name, insights);
+    form.reset();
+    setTimeout(async () => {
+      commentContent = await getcomments(id);
+      const commentsDiv = document.querySelector('.commentsHolder');
+      commentsDiv.innerHTML = '';
+      commentContent.forEach((obj) => {
+        if (obj.username !== '') {
+          commentsDiv.innerHTML += `
+          <div class="commentaries">
+          <p class="commentName">Name= ${obj.username}</p>
+          <p class="commentCom">Comment= ${obj.comment}</p>
+          <p class="creationDate">Date and Time=${obj.creation_date}</p>
+          `;
+        }
+      });
+    }, 2000);
   });
+
   const commentsDiv = document.querySelector('.commentsHolder');
   commentContent.forEach((obj) => {
-    commentsDiv.innerHTML += `
-    <div class="commentaries">
-    <p class="commentName">Name= ${obj.username}</p>
-    <p class="commentCom">Comment= ${obj.comment}</p>
-    <p class="creationDate">Date and Time=${obj.creation_date}</p>
-    `;
+    if (obj.username !== '') {
+      commentsDiv.innerHTML += `
+      <div class="commentaries">
+      <p class="commentName">Name= ${obj.username}</p>
+      <p class="commentCom">Comment= ${obj.comment}</p>
+      <p class="creationDate">Date and Time=${obj.creation_date}</p>
+      `;
+    }
   });
-  // commentsDiv.textContent = commentContent[0].comment;
 };
