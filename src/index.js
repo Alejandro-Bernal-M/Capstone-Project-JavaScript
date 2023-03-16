@@ -5,9 +5,7 @@ import giveLikes from './modules/giveLikes.js';
 import likeCounter from './modules/likeCounter.js';
 import counterForAllLikes from './modules/counterForAllLikes.js';
 import counterForAllCards from './modules/counterForAllCards.js';
-
 import counterComments from './modules/counterComments.js';
-=======
 import likesConstructor from './modules/likesConstructor.js';
 
 const logo = document.querySelector('.LOGO');
