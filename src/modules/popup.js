@@ -2,6 +2,7 @@ import arrayWithCars from './arrayWithCars.js';
 import cars from './carImg.js';
 import comments from './comments.js';
 import getcomments from './getcomments.js';
+import localCommentCounter from './localCommentCounter.js';
 
 export default async (
   btn,
@@ -30,6 +31,7 @@ export default async (
         <button id = "button" class="btn" type="submit">Submit</button>
       </div>
       </form>
+      <div class= "howMany"><h2>Comments (<span class="howManyComments"></span>)</h2></div>
       <div class ="commentsHolder"></div>
 
       `;
@@ -60,6 +62,8 @@ export default async (
           <p class="creationDate">Date and Time=${obj.creation_date}</p>
           `;
         }
+        const howManyComments = document.querySelector('.howManyComments');
+        howManyComments.textContent = localCommentCounter();
       });
     }, 2000);
   });
@@ -69,10 +73,13 @@ export default async (
     if (obj.username !== '') {
       commentsDiv.innerHTML += `
       <div class="commentaries">
+      <p class="creationDate">Date of comment=${obj.creation_date}</p>
       <p class="commentName">Name= ${obj.username}</p>
       <p class="commentCom">Comment= ${obj.comment}</p>
-      <p class="creationDate">Date and Time=${obj.creation_date}</p>
       `;
     }
   });
+
+  const howManyComments = document.querySelector('.howManyComments');
+  howManyComments.textContent = localCommentCounter();
 };
