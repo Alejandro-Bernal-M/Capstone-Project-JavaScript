@@ -10,6 +10,7 @@ export default () => {
   for (let i = 0; i < likes.length; i += 1) {
     if (storage[i].liked === true) {
       likes[i].style.backgroundImage = `url('${likeImg}')`;
+      likes[i].classList.add('liked');
     } else {
       likes[i].style.backgroundImage = `url('${noLike}')`;
     }
