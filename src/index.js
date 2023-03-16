@@ -16,15 +16,16 @@ const counterLikesHolder = document.querySelector('.likesCounter');
 
 logo.onclick = () => {
   sectionContainer.style.display = 'block';
-};
+  sectionCounter.style.display = 'block';
+}
 carsBtn.onclick = () => {
   sectionContainer.style.display = 'block';
   sectionCounter.style.display = 'none';
-};
+}
 likesBtn.onclick = () => {
   sectionCounter.style.display = 'block';
   sectionContainer.style.display = 'none';
-};
+}
 
 counterForAllLikes();
 cardsConstructor();
