@@ -156,8 +156,8 @@ npm run deploy
 
 👤 **Alejandro Bernal Marin**
 
-- GitHub: [@](https://github.com/Alejandro-Bernal-M)
-- Twitter: [@](https://twitter.com/ABMblau)
+- GitHub: [@Alejandro](https://github.com/Alejandro-Bernal-M)
+- Twitter: [@ABMblau](https://twitter.com/ABMblau)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/alejandro-bernal-marin-901a53245/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
