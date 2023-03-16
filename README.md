@@ -136,7 +136,6 @@ run jest tests with "npm test"
 ### Deployment <a name="deployment"></a>
 
 npm run deploy
-```
 
 - GitHub Pages was used to deploy this website
 - For more information about publishing sources, see "[About github page](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)"
