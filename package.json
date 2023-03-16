@@ -15,7 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "jest":{
+  "jest": {
     "testEnvironment": "jsdom"
   },
   "bugs": {
