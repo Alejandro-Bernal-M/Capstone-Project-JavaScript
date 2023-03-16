@@ -5,6 +5,39 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.nav {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu > li > a,
+.LOGO {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-menu > li > a:hover,
+.LOGO:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .card-holder {
   height: 800px;
   width: 80%;
@@ -131,11 +164,6 @@
   margin-top: 11px;
 }
 
-.counters {
-  width: 15%;
-  margin: 0 auto;
-}
-
 .counter-li {
   margin: 7px;
 }
@@ -182,4 +210,24 @@
 .cars-popup-title {
   margin-top: 10px;
   font-size: 30px;
+}
+
+.counters {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  height: 500px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.counters > h3 {
+  font-size: 30px;
+}
+
+.counter-section {
+  display: none;
+  height: 100%;
 }

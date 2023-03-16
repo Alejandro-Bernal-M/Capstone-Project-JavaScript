@@ -1,4 +1,4 @@
-import getLikes from './getLikes.js';
+import getLikes from './getLikesFromAPI.js';
 
 export default async () => {
   const likes = await getLikes();
